@@ -1,0 +1,21 @@
+set $wallpaper /home/byte/Pictures/Wallpapers/static/a.jpg
+
+set $background #000000
+set $foreground #f4f4f4
+
+set $color0 #000000
+set $color1 #6F6F6F
+set $color2 #8F8F8F
+set $color3 #B0B0B0
+set $color4 #D0D0D0
+set $color5 #E8E8E8
+set $color6 #F3F3F3
+set $color7 #f4f4f4
+set $color8 #aaaaaa
+set $color9 #6F6F6F
+set $color10 #8F8F8F
+set $color11 #B0B0B0
+set $color12 #D0D0D0
+set $color13 #E8E8E8
+set $color14 #F3F3F3
+set $color15 #f4f4f4

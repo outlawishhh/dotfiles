@@ -1,0 +1,62 @@
+/* Pywal template for Discord / Vencord / Vesktop
+   This template outputs CSS variables for Discord based on pywal's palette.
+   Save as: ~/.config/wal/templates/discord.rasi
+*/
+
+:root {
+    /* Pywal 16-color palette */
+    --color0: #03010A;
+    --color1: #4F4666;
+    --color2: #350189;
+    --color3: #5B01A0;
+    --color4: #6E44A0;
+    --color5: #9701A9;
+    --color6: #A102CE;
+    --color7: #d67de1;
+    --color8: #95579d;
+    --color9: #4F4666;
+    --color10: #350189;
+    --color11: #5B01A0;
+    --color12: #6E44A0;
+    --color13: #9701A9;
+    --color14: #A102CE;
+    --color15: #d67de1;
+
+    /* Core text/background */
+    --background: #03010A;
+    --foreground: #d67de1;
+    --foreground-rgba: rgba(214,125,225,1.0);
+    --foreground-strip: d67de1;
+
+    /* Mapped theme variables (ClearVision equivalents) */
+    --main-color: #350189;
+    --hover-color: #6E44A0;
+    --success-color: #5B01A0;
+    --danger-color: #4F4666;
+    --url-color: #350189;
+
+    --online-color: #5B01A0;
+    --idle-color: #5B01A0;
+    --dnd-color: #4F4666;
+    --streaming-color: #9701A9;
+    --offline-color: #95579d;
+
+    --text-normal: #d67de1;
+    --text-muted: rgba(214,125,225,1.0);
+
+    --channels-width: 220px;
+    --members-width: 240px;
+
+    /* Background and overlays */
+    --background-overlay: rgba(0,0,0,0.6);
+    --backdrop-overlay: rgba(0,0,0,0.8);
+    --user-popout-overlay: rgba(0,0,0,0.6);
+    --user-popout-blur: 3px;
+    --user-modal-blur: 3px;
+
+    /* BetterDiscord compatibility vars */
+    --bd-blue: #350189;
+    --bd-blue-hover: #6E44A0;
+    --bd-blue-active: #6E44A0;
+
+}

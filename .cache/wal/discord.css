@@ -1,0 +1,57 @@
+/**
+ * Pywal Discord Color Template
+ * Place this file at: ~/.config/wal/templates/discord.css
+ * Pywal will automatically generate colors from your wallpaper
+ */
+
+:root {
+  /* PYWAL COLOR PALETTE */
+  --wal-color0: #03010A;
+  --wal-color1: #4F4666;
+  --wal-color2: #350189;
+  --wal-color3: #5B01A0;
+  --wal-color4: #6E44A0;
+  --wal-color5: #9701A9;
+  --wal-color6: #A102CE;
+  --wal-color7: #d67de1;
+  --wal-color8: #95579d;
+  --wal-color9: #4F4666;
+  --wal-color10: #350189;
+  --wal-color11: #5B01A0;
+  --wal-color12: #6E44A0;
+  --wal-color13: #9701A9;
+  --wal-color14: #A102CE;
+  --wal-color15: #d67de1;
+  
+  /* PYWAL SPECIAL COLORS */
+  --wal-background: #03010A;
+  --wal-foreground: #d67de1;
+  --wal-cursor: #d67de1;
+  
+  /* WALLPAPER PATH */
+  --wal-wallpaper: url("file:///home/byte/Pictures/Wallpapers/static/d.jpg");
+  
+  /* ALPHA VARIATIONS FOR TRANSPARENCY */
+  --wal-background-alpha: #03010Acc;
+  --wal-background-light: #03010A40;
+  --wal-background-dark: #03010Ae6;
+  --wal-foreground-alpha: #d67de10d;
+  
+  /* RGB VALUES (for advanced usage) */
+  --wal-color0-rgb: 3,1,10;
+  --wal-color1-rgb: 79,70,102;
+  --wal-color2-rgb: 53,1,137;
+  --wal-color3-rgb: 91,1,160;
+  --wal-color4-rgb: 110,68,160;
+  --wal-color5-rgb: 151,1,169;
+  --wal-color6-rgb: 161,2,206;
+  --wal-color7-rgb: 214,125,225;
+  --wal-color8-rgb: 149,87,157;
+  --wal-color9-rgb: 79,70,102;
+  --wal-color10-rgb: 53,1,137;
+  --wal-color11-rgb: 91,1,160;
+  --wal-color12-rgb: 110,68,160;
+  --wal-color13-rgb: 151,1,169;
+  --wal-color14-rgb: 161,2,206;
+  --wal-color15-rgb: 214,125,225;
+}

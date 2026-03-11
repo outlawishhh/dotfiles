@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/byte/Pictures/Wallpapers/static/e.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080404",
+        "foreground": "#cfbbba",
+        "cursor": "#cfbbba"
+    },
+    "colors": {
+        "color0": "#080404",
+        "color1": "#C9776B",
+        "color2": "#D47867",
+        "color3": "#B3827C",
+        "color4": "#D78377",
+        "color5": "#E38776",
+        "color6": "#A97E82",
+        "color7": "#cfbbba",
+        "color8": "#908282",
+        "color9": "#C9776B",
+        "color10": "#D47867",
+        "color11": "#B3827C",
+        "color12": "#D78377",
+        "color13": "#E38776",
+        "color14": "#A97E82",
+        "color15": "#cfbbba"
+    }
+}

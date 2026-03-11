@@ -1,0 +1,9 @@
+* {
+background: #000000;        /* Dark background for all rows */
+background-alt: #000000;    /* Same as background to remove alternation */
+border: #f4f4f4;            /* Bright text/borders */
+selected: #B0B0B0;          /* Strong yellow/green for selection */
+active: #E8E8E8;            /* Purple/magenta highlight for active */
+urgent: #6F6F6F;             /* Red for urgent items */
+foreground80: #f4f4f480;    /* Bright foreground, semi-transparent for placeholders */
+}

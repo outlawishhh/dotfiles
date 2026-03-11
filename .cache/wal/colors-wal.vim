@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/byte/Pictures/Wallpapers/static/a.jpg"
+let background = "#000000"
+let foreground = "#f4f4f4"
+let cursor     = "#f4f4f4"
+
+" Colors
+let color0  = "#000000"
+let color1  = "#6F6F6F"
+let color2  = "#8F8F8F"
+let color3  = "#B0B0B0"
+let color4  = "#D0D0D0"
+let color5  = "#E8E8E8"
+let color6  = "#F3F3F3"
+let color7  = "#f4f4f4"
+let color8  = "#aaaaaa"
+let color9  = "#6F6F6F"
+let color10 = "#8F8F8F"
+let color11 = "#B0B0B0"
+let color12 = "#D0D0D0"
+let color13 = "#E8E8E8"
+let color14 = "#F3F3F3"
+let color15 = "#f4f4f4"
