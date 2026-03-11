@@ -1,0 +1,77 @@
+<!--
+
+ Pywal-generated theme for GtkSourceView
+ Based on Oblivion theme by Paolo Borelli
+ Dynamically uses pywal color scheme
+-->
+<style-scheme id="oblivion-pywal" _name="Oblivion Pywal" version="1.0">
+<author>Pywal Generated</author>
+<_description>Dark color scheme using pywal colors</_description>
+<!-- Pywal Colors -->
+<color name="background" value="{background}"/>
+<color name="foreground" value="{foreground}"/>
+<color name="cursor" value="{cursor}"/>
+<color name="color0" value="{color0}"/>
+<color name="color1" value="{color1}"/>
+<color name="color2" value="{color2}"/>
+<color name="color3" value="{color3}"/>
+<color name="color4" value="{color4}"/>
+<color name="color5" value="{color5}"/>
+<color name="color6" value="{color6}"/>
+<color name="color7" value="{color7}"/>
+<color name="color8" value="{color8}"/>
+<color name="color9" value="{color9}"/>
+<color name="color10" value="{color10}"/>
+<color name="color11" value="{color11}"/>
+<color name="color12" value="{color12}"/>
+<color name="color13" value="{color13}"/>
+<color name="color14" value="{color14}"/>
+<color name="color15" value="{color15}"/>
+<!-- Global Settings -->
+<style name="text" foreground="foreground" background="background"/>
+<style name="selection" foreground="color15" background="color8"/>
+<style name="cursor" foreground="cursor"/>
+<style name="secondary-cursor" foreground="color8"/>
+<style name="current-line" background="color0"/>
+<style name="line-numbers" foreground="color8" background="background"/>
+<style name="draw-spaces" foreground="color8"/>
+<style name="background-pattern" background="color0"/>
+<!-- Bracket Matching -->
+<style name="bracket-match" foreground="color11"/>
+<style name="bracket-mismatch" foreground="color15" background="color1"/>
+<!-- Right Margin -->
+<style name="right-margin" foreground="color15" background="color7"/>
+<!-- Search Matching -->
+<style name="search-match" foreground="color0" background="color10"/>
+<!-- Comments -->
+<style name="def:comment" foreground="color8"/>
+<style name="def:shebang" foreground="color8" bold="true"/>
+<style name="def:doc-comment-element" italic="true"/>
+<!-- Constants -->
+<style name="def:constant" foreground="color11"/>
+<style name="def:string" foreground="color11"/>
+<style name="def:special-char" foreground="color9"/>
+<style name="def:special-constant" foreground="color9"/>
+<style name="def:floating-point" foreground="color9"/>
+<!-- Identifiers -->
+<style name="def:identifier" foreground="color12"/>
+<!-- Statements -->
+<style name="def:statement" foreground="color15" bold="true"/>
+<!-- Types -->
+<style name="def:type" foreground="color10" bold="true"/>
+<!-- Others -->
+<style name="def:preprocessor" foreground="color13"/>
+<style name="def:error" foreground="color15" background="color1" bold="true"/>
+<style name="def:warning" foreground="color15" background="color13"/>
+<style name="def:note" background="color11" foreground="color8" bold="true"/>
+<style name="def:underlined" italic="true" underline="single"/>
+<!-- Language specific -->
+<style name="diff:added-line" foreground="color10"/>
+<style name="diff:removed-line" foreground="color12"/>
+<style name="diff:changed-line" foreground="color13"/>
+<style name="diff:diff-file" foreground="color10" bold="true"/>
+<style name="diff:location" foreground="color10"/>
+<style name="diff:special-case" foreground="color15" bold="true"/>
+<style name="latex:command" foreground="color10" bold="true"/>
+<style name="latex:include" use-style="def:preprocessor"/>
+</style-scheme>
