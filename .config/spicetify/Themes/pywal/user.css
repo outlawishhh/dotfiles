@@ -1,0 +1,466 @@
+/* ============================================================
+   Pywal-Spicetify Theme
+   A dynamic theme that integrates with pywal color schemes
+   ============================================================ */
+
+/* === ROOT VARIABLES === */
+:root {
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(var(--spice-rgb-highlight), 0.3);
+}
+
+/* === MAIN APPLICATION === */
+.Root {
+    --background-base: var(--spice-main) !important;
+    --background-elevated-base: var(--spice-card) !important;
+}
+
+.main-view-container {
+    background-color: var(--spice-main) !important;
+}
+
+body {
+    background-color: var(--spice-main) !important;
+    color: var(--spice-text) !important;
+}
+
+/* === SIDEBAR === */
+.main-navBar-navBar {
+    background-color: var(--spice-sidebar) !important;
+    border-right: 1px solid rgba(var(--spice-rgb-shadow), 0.3) !important;
+}
+
+.main-navBar-navBarLinkActive,
+.main-navBar-navBarLink:hover {
+    background-color: var(--spice-selected-row) !important;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.main-navBar-navBarLink {
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+/* Sidebar headings */
+.main-yourLibraryX-navItem {
+    border-radius: var(--radius-md);
+}
+
+.main-yourLibraryX-navItem:hover {
+    background-color: var(--spice-selected-row) !important;
+}
+
+/* === TOPBAR === */
+.main-topBar-container {
+    background-color: var(--spice-main) !important;
+    backdrop-filter: blur(20px);
+}
+
+.main-topBar-background {
+    background-color: transparent !important;
+}
+
+/* Search bar */
+.main-searchBar-searchBar {
+    background-color: var(--spice-card) !important;
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.3);
+    transition: all var(--transition-fast);
+}
+
+.main-searchBar-searchBar:focus-within {
+    border-color: var(--spice-button);
+    box-shadow: 0 0 0 3px rgba(var(--spice-rgb-button), 0.2);
+}
+
+/* === BUTTONS === */
+button,
+.main-buttons-button {
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.main-buttons-button:hover:not(:disabled) {
+    transform: scale(1.04);
+}
+
+/* Primary buttons */
+.main-playButton-PlayButton,
+.main-playButton-button {
+    background-color: var(--spice-button) !important;
+    color: var(--spice-text) !important;
+    border-radius: 50%;
+    transition: all var(--transition-fast);
+}
+
+.main-playButton-PlayButton:hover,
+.main-playButton-button:hover {
+    background-color: var(--spice-button-active) !important;
+    transform: scale(1.06);
+}
+
+/* Secondary buttons */
+.main-moreButton-button {
+    color: var(--spice-subtext) !important;
+    transition: all var(--transition-fast);
+}
+
+.main-moreButton-button:hover {
+    color: var(--spice-text) !important;
+}
+
+/* === CARDS === */
+.main-card-card,
+.main-cardImage-imageWrapper {
+    background-color: var(--spice-card) !important;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+}
+
+.main-card-card:hover {
+    background-color: var(--spice-shadow) !important;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Card images */
+.main-cardImage-image {
+    border-radius: var(--radius-md);
+}
+
+/* === NOW PLAYING BAR === */
+.Root__now-playing-bar {
+    background-color: var(--spice-player) !important;
+    border-top: 1px solid rgba(var(--spice-rgb-shadow), 0.3);
+    backdrop-filter: blur(20px);
+}
+
+.main-nowPlayingBar-container {
+    background-color: transparent !important;
+}
+
+/* Now playing widget */
+.main-nowPlayingWidget-nowPlaying {
+    background-color: transparent !important;
+}
+
+.main-coverSlotCollapsed-container {
+    border-radius: var(--radius-md);
+}
+
+/* Progress bar */
+.playback-bar,
+.main-playbackBarRemainingTime-container {
+    --progress-bar-height: 4px;
+}
+
+.playback-progressbar,
+.main-playbackBar-progressBar {
+    background-color: rgba(var(--spice-rgb-shadow), 0.5) !important;
+    border-radius: calc(var(--progress-bar-height) / 2);
+    height: var(--progress-bar-height);
+    transition: height var(--transition-fast);
+}
+
+.playback-progressbar:hover,
+.main-playbackBar-progressBar:hover {
+    height: 8px;
+}
+
+.playback-bar__progress-time-elapsed,
+.main-playbackBar-progressBarFg {
+    background-color: var(--spice-button) !important;
+    border-radius: calc(var(--progress-bar-height) / 2);
+}
+
+/* Volume bar */
+.volume-bar,
+.main-nowPlayingBar-volumeBar {
+    --volume-bar-height: 4px;
+}
+
+.volume-bar__slider,
+.main-volumeBar-volumeBar {
+    background-color: rgba(var(--spice-rgb-shadow), 0.5) !important;
+    border-radius: calc(var(--volume-bar-height) / 2);
+}
+
+.volume-bar__slider-track,
+.main-volumeBar-progressBarFg {
+    background-color: var(--spice-button) !important;
+    border-radius: calc(var(--volume-bar-height) / 2);
+}
+
+/* Player controls */
+.player-controls__buttons button {
+    color: var(--spice-subtext) !important;
+    transition: all var(--transition-fast);
+}
+
+.player-controls__buttons button:hover {
+    color: var(--spice-text) !important;
+    transform: scale(1.1);
+}
+
+.main-playPauseButton-button {
+    background-color: var(--spice-button) !important;
+    color: var(--spice-text) !important;
+}
+
+.main-playPauseButton-button:hover {
+    transform: scale(1.06);
+    background-color: var(--spice-button-active) !important;
+}
+
+/* === TRACKLIST === */
+.main-trackList-trackListRow {
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+}
+
+.main-trackList-trackListRow:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.3) !important;
+}
+
+.main-trackList-trackListRowSelected {
+    background-color: rgba(var(--spice-rgb-button), 0.15) !important;
+}
+
+/* === MODALS & POPUPS === */
+.main-contextMenu-menu,
+.main-contextMenu-menuItemButton {
+    background-color: var(--spice-card) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.3);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.main-contextMenu-menuItemButton:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.5) !important;
+}
+
+/* Menu items */
+.main-contextMenu-menuItem {
+    color: var(--spice-text) !important;
+}
+
+.main-contextMenu-menuItem:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.5) !important;
+}
+
+/* === INPUTS === */
+input,
+select,
+textarea {
+    background-color: var(--spice-card) !important;
+    color: var(--spice-text) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.3);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--spice-button);
+    box-shadow: 0 0 0 3px rgba(var(--spice-rgb-button), 0.2);
+    outline: none;
+}
+
+/* === NOTIFICATIONS === */
+.main-desktopNotification-container {
+    background-color: var(--spice-card) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.3);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+/* === SCROLLBARS === */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(var(--spice-rgb-shadow), 0.5);
+    border-radius: var(--radius-md);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--spice-rgb-subtext), 0.7);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+/* === QUEUE === */
+.main-queue-queuePage {
+    background-color: var(--spice-main) !important;
+}
+
+.main-queue-queueHistoryItem:hover,
+.main-queue-queueItem:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.3) !important;
+    border-radius: var(--radius-md);
+}
+
+/* === LYRICS === */
+.lyrics-lyrics-contentContainer {
+    background-color: var(--spice-main) !important;
+}
+
+.lyrics-lyrics-contentWrapper {
+    backdrop-filter: blur(50px);
+}
+
+/* === ARTIST PAGE === */
+.main-entityHeader-background {
+    background: linear-gradient(
+        180deg,
+        rgba(var(--spice-rgb-button), 0.3) 0%,
+        var(--spice-main) 100%
+    ) !important;
+}
+
+/* === PLAYLIST ITEMS === */
+.main-rootlist-rootlistItem {
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+}
+
+.main-rootlist-rootlistItem:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.3) !important;
+}
+
+.main-rootlist-rootlistItemSelected {
+    background-color: rgba(var(--spice-rgb-button), 0.15) !important;
+}
+
+/* === TOGGLE SWITCHES === */
+.main-toggle-toggle {
+    background-color: var(--spice-shadow) !important;
+}
+
+.main-toggle-toggle[aria-checked="true"] {
+    background-color: var(--spice-button) !important;
+}
+
+/* === CHIPS === */
+.main-chip-chip {
+    background-color: var(--spice-card) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.3);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-fast);
+}
+
+.main-chip-chip:hover {
+    background-color: var(--spice-shadow) !important;
+    border-color: var(--spice-button);
+}
+
+.main-chip-chipSelected {
+    background-color: var(--spice-button) !important;
+    border-color: var(--spice-button);
+}
+
+/* === GLOWING ACCENTS === */
+.main-playPauseButton-button,
+.main-playButton-PlayButton,
+.main-playButton-button {
+    box-shadow: 0 4px 12px rgba(var(--spice-rgb-button), 0.4);
+}
+
+/* === ANIMATIONS === */
+@keyframes subtle-glow {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+.main-nowPlayingBar-container::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--spice-button),
+        transparent
+    );
+    animation: subtle-glow 3s ease-in-out infinite;
+}
+
+/* === COVER ART ENHANCEMENTS === */
+.main-image-image,
+.main-entityHeader-image {
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+}
+
+.main-card-card:hover .main-image-image {
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+/* === FOCUS STATES === */
+*:focus-visible {
+    outline: 2px solid var(--spice-button);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* === SKELETON LOADING === */
+.main-skeleton-skeletonContainer {
+    background: linear-gradient(
+        90deg,
+        var(--spice-card) 0%,
+        var(--spice-shadow) 50%,
+        var(--spice-card) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* === CLEANUP === */
+/* Remove unwanted borders */
+.main-navBar-entryPoints {
+    border-bottom: none !important;
+}
+
+/* Consistent padding */
+.main-navBar-navBar .main-yourLibraryX-libraryRootlist {
+    padding: var(--spacing-sm);
+}
