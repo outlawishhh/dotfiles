@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if ! command -v playerctl >/dev/null 2>&1; then
+    exit 0
+fi
+
+# Get the first active player
+PLAYER=$(playerctl -l 2>/dev/null | head -n1)
+
+if [ -z "$PLAYER" ]; then
+    exit 0
+fi
+
+# Get player status
+STATUS=$(playerctl -p "$PLAYER" status 2>/dev/null)
+
+if [ "$STATUS" != "Playing" ] && [ "$STATUS" != "Paused" ]; then
+    exit 0
+fi
+
+# Get metadata
+ARTIST=$(playerctl -p "$PLAYER" metadata artist 2>/dev/null)
+TITLE=$(playerctl -p "$PLAYER" metadata title 2>/dev/null)
+
+# Format output
+if [ -n "$TITLE" ]; then
+    if [ "$STATUS" = "Playing" ]; then
+        ICON="󰐊"
+    else
+        ICON="󰏤"
+    fi
+    
+    if [ -n "$ARTIST" ]; then
+        echo "$ICON  $ARTIST - $TITLE"
+    else
+        echo "$ICON  $TITLE"
+    fi
+fi
