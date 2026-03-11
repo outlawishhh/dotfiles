@@ -1,0 +1,9 @@
+* {{
+background: {color0};        /* Dark background for all rows */
+background-alt: {color0};    /* Same as background to remove alternation */
+border: {color7};            /* Bright text/borders */
+selected: {color3};          /* Strong yellow/green for selection */
+active: {color5};            /* Purple/magenta highlight for active */
+urgent: {color1};             /* Red for urgent items */
+foreground80: {color7}80;    /* Bright foreground, semi-transparent for placeholders */
+}}
